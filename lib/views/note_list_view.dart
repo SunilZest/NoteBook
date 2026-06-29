@@ -160,7 +160,7 @@ class NoteListView extends ConsumerWidget {
                   child: Container(
                     margin: const EdgeInsets.symmetric(vertical: 8),
                     decoration: BoxDecoration(
-                      color: Theme.of(context).cardColor,
+                      color: isDarkMode? Colors.black:Colors.white,
                       borderRadius: BorderRadius.circular(12),
                       border: Border.all(
                         color: note.syncStatus == SyncStatus.conflict
